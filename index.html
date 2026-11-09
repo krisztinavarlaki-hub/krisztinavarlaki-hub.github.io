@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Krisztina Varlaki</title>
+<meta name="description" content="Dr. Krisztina Varlaki, education researcher. Distributed Mastery Architecture: competency-based learning with adaptive AI, peer apprenticeship and teacher mentoring.">
+<meta property="og:title" content="Dr. Krisztina Varlaki">
+<meta property="og:description" content="Education researcher. Developing the Distributed Mastery Architecture for structural education reform.">
+<meta property="og:image" content="assets/photo.jpg">
+<link rel="icon" href="assets/photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1E2A57; --navy-2:#2B3A72; --red:#B8372B; --sage:#4E7F78; --sage-soft:#E4EEEA;
+    --cream:#F6F2EA; --paper:#FFFFFF; --ink:#1B1F2A; --muted:#5B6170; --line:#E3DED3;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
+  a{color:var(--navy-2)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;z-index:5;background:rgba(246,242,234,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+  nav .brand{font-family:"Source Serif 4",Georgia,serif;font-weight:700;color:var(--navy);text-decoration:none}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+  nav ul a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+  nav ul a:hover{color:var(--navy)}
+  /* profile card, LinkedIn-style */
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:28px;box-shadow:0 1px 2px rgba(30,42,87,.04)}
+  .banner{height:220px;background:url(assets/banner.jpg) center/cover}
+  .profile{padding:0 32px 30px;position:relative}
+  .avatar{width:168px;height:168px;border-radius:50%;border:5px solid var(--paper);object-fit:cover;margin-top:-92px;display:block;background:var(--paper)}
+  h1{font-family:"Source Serif 4",Georgia,serif;font-size:36px;line-height:1.15;margin:14px 0 6px;color:var(--navy)}
+  .headline{font-size:17px;color:var(--ink);margin:0 0 6px;max-width:720px}
+  .meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:0;list-style:none}
+  .badges li{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--sage-soft);color:var(--sage)}
+  .badges li.award{background:#F7E4E1;color:var(--red)}
+  .actions{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;padding:9px 18px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;border:1.5px solid var(--navy)}
+  .btn.primary{background:var(--navy);color:#fff}
+  .btn.ghost{color:var(--navy);background:transparent}
+  section{margin:40px 0}
+  h2{font-family:"Source Serif 4",Georgia,serif;font-size:26px;color:var(--navy);margin:0 0 14px}
+  h2::after{content:"";display:block;width:44px;height:3px;background:var(--red);margin-top:8px;border-radius:2px}
+  .panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 32px}
+  .panel p{margin:0 0 14px}.panel p:last-child{margin-bottom:0}
+  .feature{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:start}
+  .feature img{width:100%;border-radius:10px;border:1px solid var(--line);display:block}
+  .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-weight:600;margin:0 0 6px}
+  .feature h3{font-family:"Source Serif 4",Georgia,serif;font-size:22px;margin:0 0 10px;color:var(--navy);line-height:1.25}
+  .stat{border-left:3px solid var(--red);padding:4px 0 4px 14px;margin:18px 0}
+  .stat b{font-family:"Source Serif 4",Georgia,serif;font-size:24px;color:var(--red)}
+  .stat span{display:block;color:var(--muted);font-size:14px}
+  .pubs{list-style:none;margin:0;padding:0}
+  .pub{padding:20px 0;border-top:1px solid var(--line)}
+  .pub:first-child{border-top:0;padding-top:0}
+  .pub .year{font-size:13px;font-weight:600;color:var(--sage)}
+  .pub .title{font-weight:600;font-size:17px;margin:2px 0 4px;color:var(--ink)}
+  .pub .venue{color:var(--muted);font-size:14px;margin:0 0 8px}
+  .pub .links{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .pub .links a{font-size:13px;font-weight:600;text-decoration:none;padding:4px 12px;border:1px solid var(--line);border-radius:999px;color:var(--navy)}
+  .pub .links a:hover{border-color:var(--navy)}
+  .pub .tag{font-size:12px;font-weight:600;color:var(--red);background:#F7E4E1;padding:3px 10px;border-radius:999px}
+  .notice{font-size:12.5px;color:var(--muted);background:var(--cream);border-radius:8px;padding:10px 12px;margin-top:10px}
+  .awards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .award-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px;border-top:4px solid var(--red)}
+  .award-card .y{font-size:13px;font-weight:600;color:var(--sage)}
+  .award-card h3{margin:4px 0 6px;font-size:18px;color:var(--navy)}
+  .award-card p{margin:0;color:var(--muted);font-size:14.5px}
+  footer{background:var(--navy);color:#DDE2F0;margin-top:56px;padding:34px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+  footer a{color:#fff}
+  footer small{color:#AAB3CC}
+  @media (max-width:760px){
+    nav ul{display:none}
+    .banner{height:130px}
+    .profile{padding:0 18px 22px}
+    .avatar{width:120px;height:120px;margin-top:-64px}
+    h1{font-size:28px}
+    .panel{padding:22px 18px}
+    .feature{grid-template-columns:1fr}
+    .awards{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#">Krisztina Varlaki</a>
+  <ul><li><a href="#about">About</a></li><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#awards">Awards</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<main class="wrap">
+  <div class="card">
+    <div class="banner" role="img" aria-label="Abstract marble pattern in cream and sage"></div>
+    <div class="profile">
+      <img class="avatar" src="assets/photo.jpg" alt="Portrait of Dr. Krisztina Varlaki">
+      <h1>Dr. Krisztina Varlaki</h1>
+      <p class="headline">Doctoral Researcher in EdTech | Developing the Distributed Mastery Architecture for Structural Education Reform | Bridging Pedagogical AI &amp; Learning Design</p>
+      <p class="meta">Petah Tikva, Israel · English, Hebrew, Hungarian</p>
+      <ul class="badges">
+        <li class="award">Best Paper Award · CogInfoCom 2026</li>
+        <li>Cognitive Infocommunications</li>
+        <li>AI in Education</li>
+        <li>Peer Learning</li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="papers/Varlaki_2026_AI-Driven_Redesign_accepted_manuscript.pdf">Read the award-winning paper</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/dr-krisztina-varlaki-11a729435">LinkedIn</a>
+        <a class="btn ghost" href="https://orcid.org/0009-0001-3596-8842">ORCID</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="panel">
+      <p>Krisztina Varlaki is an education researcher based in Israel. Her work asks how AI can restructure the way schools organise learning, rather than add another tool to the existing classroom. She holds a Doctor of Law (dr. jur.) degree from the University of Miskolc and a teaching qualification in English, and brings formal and fuzzy logic to questions of educational design.</p>
+      <p>Her current work is the Distributed Mastery Architecture (DMA), a model in which competency, not age, decides what a learner does next. Learning happens on an adaptive AI platform. A learner who stalls is paired with a near-peer mentor who has recently mastered the unit, and the teacher steps in where peer support also fails. Each step feeds a longitudinal portfolio owned by the learner.</p>
+      <p>She first presented at CogInfoCom in 2018, with a paper on hybrid legal decision-making that won that year's Wolters Kluwer Jogászdíj. She is open to collaboration on education reform research.</p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="panel feature">
+      <img src="assets/dma-architecture.jpg" alt="Diagram of the Distributed Mastery Architecture: every learner starts on an adaptive AI platform; if stuck, a peer apprentice mentor; if peer support fails, expert remediation by a teacher-mentor; all records feed a longitudinal portfolio owned by the learner.">
+      <div>
+        <p class="kicker">The Distributed Mastery Architecture</p>
+        <h3>One architecture, one record</h3>
+        <p>Most school systems still run on an industrial-era design: uniform pace, age-based classes, and assessment that arrives late and explains little. The DMA treats the learning environment itself as a cognitive system. It draws on Bloom's mastery learning, Vygotsky's zone of proximal development, and the protégé effect, in which tutors gain at least as much as the learners they help.</p>
+        <div class="stat"><b>44 education systems</b><span>A companion study tests, on TIMSS 2023 grade 8 data, whether a suitable near-peer mentor exists within real schools.</span></div>
+        <p>Current work extends the architecture to governance: who is accountable when an AI system decides how a learner is supported, and what that decision must make explainable, contestable and auditable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <div class="panel">
+      <ul class="pubs">
+        <li class="pub">
+          <div class="year">2026 · in press</div>
+          <div class="title">AI-Driven Redesign of Learning Environments: A Cognitive Infocommunications Framework for Structural Education Reform</div>
+          <p class="venue">Varlaki, K. Proceedings of the 17th International Conference on Cognitive Infocommunications (CogInfoCom 2026), Springer.</p>
+          <div class="links">
+            <span class="tag">Best Paper Award</span>
+            <a href="papers/Varlaki_2026_AI-Driven_Redesign_accepted_manuscript.pdf">PDF (accepted manuscript)</a>
+          </div>
+          <p class="notice">This is an Accepted Manuscript version of the following work: Varlaki, K., AI-Driven Redesign of Learning Environments: A Cognitive Infocommunications Framework for Structural Education Reform, CogInfoCom 2026 Proceedings, Springer. The final authenticated version will be available online at the publisher's website; a link will be added here on publication.</p>
+        </li>
+        <li class="pub">
+          <div class="year">2026 · registered review</div>
+          <div class="title">Does the Tutor–Tutee Competency Gap Moderate the Academic Effects of Peer and Cross-Age Tutoring? A Role-Specific Meta-Analysis</div>
+          <p class="venue">Varlaki, K. Public registration, Open Science Framework.</p>
+          <div class="links"><a href="https://osf.io/s5876/">OSF registration</a></div>
+        </li>
+        <li class="pub">
+          <div class="year">2018</div>
+          <div class="title">A Hybrid Decision Making Focused on Legal Processes</div>
+          <p class="venue">Varlaki, K., &amp; Baranyi, P. 9th IEEE International Conference on Cognitive Infocommunications (CogInfoCom), Budapest, pp. 411–416.</p>
+          <div class="links">
+            <span class="tag">Wolters Kluwer Jogászdíj 2018</span>
+            <a href="https://doi.org/10.1109/coginfocom.2018.8639868">DOI</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards</h2>
+    <div class="awards">
+      <div class="award-card">
+        <div class="y">2026</div>
+        <h3>Best Paper Award, CogInfoCom 2026</h3>
+        <p>17th International Conference on Cognitive Infocommunications, 12–13 October 2026, Hong Kong, for "AI-Driven Redesign of Learning Environments".</p>
+      </div>
+      <div class="award-card">
+        <div class="y">2018</div>
+        <h3>Wolters Kluwer Jogászdíj</h3>
+        <p>Dispute resolution category, for a hybrid decision-support system that predicts litigation outcomes. <a href="https://arsboni.hu/interju-dr-varlaki-krisztinaval-a-2018-as-jogaszdij-egyik-nyertesevel/">Interview (Hungarian)</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div>
+    <strong>Dr. Krisztina Varlaki</strong><br>
+    <a href="mailto:krisztinavarlaki@gmail.com">krisztinavarlaki@gmail.com</a> · <a href="https://www.linkedin.com/in/dr-krisztina-varlaki-11a729435">LinkedIn</a> · <a href="https://orcid.org/0009-0001-3596-8842">ORCID 0009-0001-3596-8842</a>
+  </div>
+  <small>© 2026 Krisztina Varlaki</small>
+</div></footer>
+</body>
+</html>
